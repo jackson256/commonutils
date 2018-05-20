@@ -1,5 +1,7 @@
 package com.hudson.common.utils;
 
+import java.util.Random;
+
 /**
  * 
  * @类描述:   
@@ -27,6 +29,22 @@ public class OpUtils {
 	 */
 	public static<V> boolean checkEmpty(V v){
 		return  v == null || v == "" || v == "null" || "".equals(v) ||  "null".equals(v) ? true : false;
+	}
+	
+	/** 
+     * 返回一个定长的随机纯大写字母字符串
+     * @param length  随机字符串长度 
+     * @return 随机字符串 
+     */  
+	 private static final String ALLCHAR = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";  
+	 private static final String LETTERCHAR = "abcdefghijkllmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";  
+	 public static String generateMixString(String prefix,int length) {  
+        StringBuffer sb = new StringBuffer();  
+        Random random = new Random();  
+        for (int i = 0; i < length; i++) {  
+            sb.append(ALLCHAR.charAt(random.nextInt(LETTERCHAR.length())));  
+        }  
+        return prefix + sb.toString().toLowerCase() + String.valueOf(System.currentTimeMillis()).substring(8) + (long) (Math.random() *10);
 	}
 
 }

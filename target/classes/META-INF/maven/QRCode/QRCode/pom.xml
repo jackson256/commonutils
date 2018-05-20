@@ -7,6 +7,9 @@
   <properties>
   	<spring.version>4.3.14.RELEASE</spring.version>
   	<zxing.version>3.0.0</zxing.version>
+  	<httpclient-version>4.3.5</httpclient-version>
+  	<json.version>1.2.16</json.version>
+  	<httpcore.version>4.3.5</httpcore.version>
   </properties>
   
   <dependencies>
@@ -24,6 +27,22 @@
 	    <groupId>org.springframework</groupId>
 	    <artifactId>spring-core</artifactId>
 	    <version>${spring.version}</version>
+	</dependency>
+	<!-- httpclient -->
+      <dependency>
+          <groupId>org.apache.httpcomponents</groupId>
+          <artifactId>httpclient</artifactId>
+          <version>${httpclient-version}</version>
+      </dependency>
+      <dependency>
+          <groupId>org.apache.httpcomponents</groupId>
+          <artifactId>httpmime</artifactId>
+          <version>${httpclient-version}</version>
+      </dependency>
+      <dependency>
+		<groupId>com.alibaba</groupId>
+		<artifactId>fastjson</artifactId>
+		<version>${json.version}</version>
 	</dependency>
   	
   </dependencies>
