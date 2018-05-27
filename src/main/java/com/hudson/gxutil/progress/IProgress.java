@@ -10,7 +10,7 @@ package com.hudson.gxutil.progress;
  /** 
  * @className: IProgress
  * @Description:
- * @author: huhan
+ * @author: hudson
  * @date: 2018年5月27日 下午12:58:54
  * @version: 1.0
  */

@@ -23,7 +23,7 @@ import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
 /**
  * base:https://github.com/zxing/
  * @类描述: 基于Zxing二维码生成、解码工具类
- * @创建人: huhan
+ * @创建人: hudson
  * @创建时间:2018年4月25日 下午1:23:08  
  * @version V1.0
  */

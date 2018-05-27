@@ -3,7 +3,7 @@ package com.hudson.designpattern.proxy.jt;
 /**
  * 
  * @类描述: 静态代理演示-测试类
- * @创建人: huhan 
+ * @创建人: hudson
  * @创建时间:2018年5月19日 上午12:29:03  
  * @version V1.0
  */

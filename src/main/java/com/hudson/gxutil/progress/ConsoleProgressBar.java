@@ -14,7 +14,7 @@ import java.util.Date;
 /**
  * @className: ConsoleProgressBar
  * @Description:
- * @author: huhan
+ * @author: hudson
  * @date: 2018年5月27日 下午12:59:35
  * @version: 1.0
  */

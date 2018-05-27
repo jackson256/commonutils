@@ -6,7 +6,7 @@ public class StringUtils {
 	 * 
 	 * @Title concat_ws
 	 * @Description 
-	 * @author huhan
+	 * @author hudson
 	 * @lastmodified 2018年5月20日下午12:48:55
 	 * @modifiedBy
 	 */

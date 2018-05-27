@@ -26,7 +26,7 @@ import com.hudson.gxutil.reflex.ReflexUtil;
 /**
  * @className: AbstractServlet
  * @Description:
- * @author: huhan
+ * @author: hudson
  * @date: 2018年5月27日 下午1:03:43
  * @version: 1.0
  */

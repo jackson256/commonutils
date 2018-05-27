@@ -23,7 +23,7 @@ import com.hudson.gxutil.servlet.AbstractServlet;
 /**
  * @className: ClassLoaderUtil
  * @Description:
- * @author: huhan
+ * @author: hudson
  * @date: 2018年5月27日 下午12:43:13
  * @version: 1.0
  */
