@@ -2,7 +2,7 @@
  * Copyright © 2018 All rights reserved.
  *
  * @Package:com.hudson.gxutil.classload
- * @author: huhan
+ * @author: hudson
  * @date:2018年5月27日 下午12:43:13
  */
 package com.hudson.gxutil.classload;

@@ -2,7 +2,7 @@
  * Copyright © 2018 All rights reserved.
  *
  * @Package:com.hudson.gxutil.progress
- * @author: huhan
+ * @author: hudson
  * @date:2018年5月27日 下午12:58:54
  */
 package com.hudson.gxutil.progress;

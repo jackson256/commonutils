@@ -2,7 +2,7 @@
  * Copyright © 2018 All rights reserved.
  *
  * @Package:com.hudson.gxutil.servlet
- * @author: huhan
+ * @author: hudson
  * @date:2018年5月27日 下午1:03:43
  */
 package com.hudson.gxutil.servlet;
