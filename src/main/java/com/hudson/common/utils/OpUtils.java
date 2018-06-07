@@ -46,5 +46,13 @@ public class OpUtils {
         }  
         return prefix + sb.toString().toLowerCase() + String.valueOf(System.currentTimeMillis()).substring(8) + (long) (Math.random() *10);
 	}
+	 
+	 public static void main(String[] args) {
+		int num = 589;
+		System.out.println("10:"+Integer.toBinaryString(num));
+		System.out.println("16:"+Integer.toHexString(num));
+		System.out.println("8:"+Integer.toOctalString(num));
+		System.out.println(Integer.valueOf("24d", 16));
+	}
 
 }
