@@ -5,7 +5,7 @@
  * @author: hudson
  * @date:2018年6月6日 下午5:15:07
  */
-package org.utils.keyword;
+package org.utils.keyword.serializable;
 
 import java.io.Serializable;
 

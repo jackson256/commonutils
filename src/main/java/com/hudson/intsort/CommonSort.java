@@ -16,7 +16,7 @@ import java.util.Arrays;
  * @date: 2018年6月7日 下午2:43:50
  * @version: 1.0
  */
-public class ShellSort {
+public class CommonSort {
 
 	public static void main(String[] args) {
 		int num[] = { 1, 54, 6, 8, 9, 52, 6, 98, 45 };

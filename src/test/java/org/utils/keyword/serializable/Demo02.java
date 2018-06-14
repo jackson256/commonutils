@@ -5,7 +5,7 @@
  * @author: hudson
  * @date:2018年6月6日 下午5:22:18
  */
-package org.utils.keyword;
+package org.utils.keyword.serializable;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -22,22 +22,22 @@ import java.io.OutputStream;
  * @date: 2018年6月6日 下午5:22:18
  * @version: 1.0
  */
-public class Demo01 {
+public class Demo02 {
 
 	public static void main(String[] args) {
 		String filePath = "E:\\temp\\account.txt";
-		Account kingcos = new Account(62278888L, "kingcos02", "123456", 1000.0);
-		Account.staticVar = 11;
+		AccountExt kingcos = new AccountExt(62278888L, "kingcos02", "123456", 1000.0);
+		AccountExt.staticVar = 11;
 		System.out.println("序列化之前：");
 		System.out.println(kingcos);
-		System.out.println("staticVar = " + Account.staticVar);
+		System.out.println("staticVar = " + AccountExt.staticVar);
 
 		write(kingcos, filePath);
-		Account.staticVar = 22;
-		Account newKingcos = read(filePath);
+		AccountExt.staticVar = 22;
+		AccountExt newKingcos = read(filePath);
 		System.out.println("序列化之后：");
 		System.out.println(newKingcos);
-		System.out.println("staticVar = " + Account.staticVar);
+		System.out.println("staticVar = " + AccountExt.staticVar);
 	}
 
 	/**
@@ -47,12 +47,12 @@ public class Demo01 {
 	 * @lastmodified 2018年6月6日下午5:30:19
 	 * @modifiedBy
 	 */
-	private static Account read(String filePath) {
+	private static AccountExt read(String filePath) {
 		ObjectInputStream ois = null;
-		Account acc = null;
+		AccountExt acc = null;
 		try {
 			ois = new ObjectInputStream(new FileInputStream(filePath));
-			acc = (Account) ois.readObject();
+			acc = (AccountExt) ois.readObject();
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
@@ -75,7 +75,7 @@ public class Demo01 {
 	 * @lastmodified 2018年6月6日下午5:25:03
 	 * @modifiedBy
 	 */
-	private static void write(Account kingcos, String filePath) {
+	private static void write(AccountExt kingcos, String filePath) {
 		OutputStream out = null;
 		ObjectOutputStream output = null;
 		try {
